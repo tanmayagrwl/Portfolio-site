@@ -1,0 +1,23 @@
+ body {
+    background-color: #000;
+    background-image: url(hemstar2.jpg);
+    background-size: 100%;
+    outline: 1px solid white;
+    outline-offset: -4px;
+    
+} 
+
+.body_flex {
+    display: flex;
+    height: 690px;
+    }
+
+/* .fl1{
+    flex: 50%;
+    background-image: url(hemstar.jpeg);
+}
+
+.fl2{
+    flex: 50%;
+    background-image: url(hemstar.jpeg);
+} */
