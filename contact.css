@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'MyWebFont2';
+    src: url('/Assets/Graphik-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MyWebFont1';
+    src: url('/Assets/Graphik-Semibold.woff') format('woff');
+}
+
+
+body{
+    background-color: black;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    text-align: right;
+    width: 100%;
+}
+
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding-right: 10%;
+    padding-top: 2.50%; 
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'myWebFont2',Fallback, sans-serif;
+    font-size: 1.20em;
+    animation: showup1 0.5s linear forwards;
+}
+
+.navbar a:hover{
+    animation: showup2 0.5s linear forwards ;
+}
+
+@keyframes showup1 {
+    0% {padding-right:12%;}
+    50% {padding-right:11% ;}
+    100% {padding-right: 10%;}
+}
+
+@keyframes showup2 {
+    0% {padding-right:10%;}
+    50% {padding-right:11% ;}
+    100% {padding-right: 12%;}
+}
+
+#toptext{
+    color: white;
+    font-family: 'myWebFont2',Fallback, sans-serif; 
+    padding-top: 6.7% ;
+    padding-left: 15%;
+    font-size: 7em;
+    line-height: 130%;
+    animation: opatoptext 1s linear;
+}
+
+@keyframes opatoptext {
+    0% {opacity:0;}
+    50% {opacity:0.50;}
+    100% {opacity:1;}
+}
+
+#belhead{
+    color: #ffffff;
+    font-family: 'myWebFont1',Fallback, sans-serif; 
+    padding-left: 25%;
+    padding-top:7% ;
+    font-size: 3em;
+}
+
+#beltext1, #beltext2{
+    padding-left: 25%;
+    padding-right: 30%;
+    font-size: 1.2em;
+    line-height: 150%;
+    text-align:justify ;
+    color: #ffffff;
+    font-family: 'myWebFont2',Fallback, sans-serif; 
+    font-weight: 50%;
+}
+
+#email, #linkdin, #twitter, #instagram, #github{
+    color: red;
+    font-family:'myWebFont2',Fallback, sans-serif; 
+    font-size: 1.2em;
+    padding-left: 25%;
+    animation: showup4 0.5s linear forwards ;
+}
+
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+
+@keyframes showup3 {
+    0% {padding-left:25%;}
+    50% {padding-left:26% ;}
+    100% {padding-left: 27%;}
+}
+
+@keyframes showup4 {
+    100% {padding-left:25%;}
+    50% {padding-left:26% ;}
+    0% {padding-left: 27%;}
+}
+
+
+#email:hover , #github:hover, #instagram:hover, #twitter:hover, #linkdin:hover{
+    animation: showup3 0.5s linear forwards ;
+}
