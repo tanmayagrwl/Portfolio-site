@@ -1,23 +1,78 @@
  body {
     background-color: #000;
-    background-image: url(hemstar2.jpg);
-    background-size: 100%;
-    outline: 1px solid white;
-    outline-offset: -4px;
-    
+    background-image: url(/Assets/pexels-photo-5199173.jpeg);
+    background-size: 100%; 
+    background-position: -1px;
+    background-position-x: 170px;
+    /* background-image: ; */
+    padding-top: 7.5%;
+    animation: animateUser 4s linear infinite;
 } 
 
-.body_flex {
-    display: flex;
-    height: 690px;
+@keyframes animateUser {
+    50%{
+        top: 30px;
+        right: -90pc;
     }
-
-/* .fl1{
-    flex: 50%;
-    background-image: url(hemstar.jpeg);
 }
 
-.fl2{
-    flex: 50%;
-    background-image: url(hemstar.jpeg);
-} */
+
+
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('/Assets/Graphik-Semibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MyWebFont2';
+    src: url('/Assets/Graphik-Medium.woff') format('woff');
+}
+
+
+
+.a , .b, .c {
+    text-align: left;
+    padding-left: 15%;
+    color: red;    
+    font-family: 'myWebFont2',Fallback, sans-serif;
+    line-height: 130%;
+    letter-spacing: -2px;
+    font-size: 7.5em;
+    font-weight: 700;
+    animation: showup2 0.5s linear forwards;
+
+}
+
+.a{
+    font-family: 'myWebFont',Fallback, sans-serif;
+    color:white;
+    /* animation: showup2 0.5s linear forwards; */
+}
+
+
+
+.a:hover , .b:hover, .c:hover{
+    animation: showup1 0.5s linear forwards;
+}
+
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:0.34;}
+    80% {opacity:0.66;}
+    100% {opacity:1;}
+}
+
+
+@keyframes showup1 {
+    0% {padding-left:15%;}
+    50% {padding-left:17% ;}
+    100% {padding-left: 18%;}
+}
+
+@keyframes showup2{
+    0% {padding-left: 18%;}
+    100% {padding-left:15%;}
+} 
