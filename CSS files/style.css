@@ -7,6 +7,7 @@
     /* background-image: ; */
     padding-top: 7.5%;
     animation: animateUser 4s linear infinite;
+    background-repeat: no-repeat;
 } 
 
 @keyframes animateUser {
